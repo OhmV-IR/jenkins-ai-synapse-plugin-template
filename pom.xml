@@ -75,16 +75,34 @@
     </dependencies>
   </dependencyManagement>
 
+  <dependencies>
+    <dependency>
+      <groupId>io.ohmvir.plugins</groupId>
+      <artifactId>jenkinsaisynapse</artifactId>
+      <type>hpi</type>
+    </dependency>
+  </dependencies>
+
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
       <url>https://repo.jenkins-ci.org/public/</url>
+    </repository>
+    <repository>
+      <id>nexus-releases</id>
+      <name>Nexus Releases repository</name>
+      <url>https://nexus.ohmvir.dev/repository/maven-releases/</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
       <url>https://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>nexus-releases</id>
+      <name>Nexus Releases repository</name>
+      <url>https://nexus.ohmvir.dev/repository/maven-releases/</url>
     </pluginRepository>
   </pluginRepositories>
 
